@@ -68,7 +68,8 @@ export const onAuthUser = async () => {
     }
     return { status: 400 };
   } catch (error) {
-    console.log("🔴 ERROR", error);
+    console.error("🔴 ERROR", error);
     return { status: 500 };
   }
 };
+  
